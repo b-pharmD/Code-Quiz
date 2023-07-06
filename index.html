@@ -11,29 +11,34 @@
 
 <body>
     <header class="header">
-        <h2 id="time"></h2>
+        <h2 id="timer"></h2>
     </header>
-    <div class="show">
+    <div id="instructions" data>
         <h1>Code Quiz</h1>
         <p>Answer the following questions about code within the time limit. Each incorrect answer will take 5 seconds off the clock.</p>
         <button type="button">Start Quiz</button>
     </div>
     
-    <div class="hide">
-        <h2></h2>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+    <div class="quizQuestion">
+        <h2 id="questionText"></h2>
+        <input type="radio" id="choiceA" name="answer_choice" value="">
+        <label for="choiceA"></label><br>
+        <input type="radio" id="choiceB" name="answer_choice" value="">
+        <label for="choiceB"></label><br>
+        <input type="radio" id="choiceC" name="answer_choice" value="">
+        <label for="choiceC"></label><br>
+        <input type="radio" id="choiceD" name="answer_choice" value="">
+        <label for="choiceD"></label><br>
+        <input type="submit" id="questionSubmit" value="Submit Answer">
     </div>
 
-    <div class="hide">
+    <div id="quizEnd">
         <h2>Finished!</h2>
         <p>Your score is:<span></span></p>
 
     </div>
 
-    <div class="hide">
+    <div id="scores">
         <h2>High Scores</h2>
         <button type="button">Try Again</button>
         <button type="reset">Reset Scores</button>
@@ -41,3 +46,13 @@
 </body>
 
 </html>
+
+
+<h1>Click on Box to Show Hidden Number</h1>
+<div class="container">
+  <div class="box" data-number="1" data-state="hidden"></div>
+  <div class="box" data-number="2" data-state="hidden"></div>
+  <div class="box" data-number="3" data-state="hidden"></div>
+  <div class="box" data-number="4" data-state="hidden"></div>
+  <div class="box" data-number="5" data-state="hidden"></div>
+  <div class="box" data-number="6" data-state="hidden"></div>

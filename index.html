@@ -16,7 +16,7 @@
     <div id="instructions" data>
         <h1>Code Quiz</h1>
         <p>Answer the following questions about code within the time limit. Each incorrect answer will take 5 seconds off the clock.</p>
-        <button type="button">Start Quiz</button>
+        <button type="button" id="startButton">Start Quiz</button>
     </div>
     
     <div class="quizQuestion">
@@ -29,13 +29,13 @@
         <label for="choiceC"></label><br>
         <input type="radio" id="choiceD" name="answer_choice" value="">
         <label for="choiceD"></label><br>
-        <input type="submit" id="questionSubmit" value="Submit Answer">
+        <input type="submit" id="answerSubmit" value="Submit Answer">
     </div>
 
     <div id="quizEnd">
         <h2>Finished!</h2>
         <p>Your score is:<span></span></p>
-
+        
     </div>
 
     <div id="scores">
@@ -43,6 +43,8 @@
         <button type="button">Try Again</button>
         <button type="reset">Reset Scores</button>
     </div>
+
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>

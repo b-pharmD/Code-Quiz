@@ -35,19 +35,31 @@ var questions = [
         answer: "valueOf()"
     }];
 
-var timer = document.getElementById('time')
+var startButtonEl = document.querySelector('#startButton');
+var timerEl = document.querySelector('#timer');
 var timeLeft = 60;
+var quizQuestionEl = document.querySelector('.quizQuestion');
+var questionTextEl = document.querySelector('.questionText');
+var choiceAEl = document.querySelector('#choiceA');
+var choiceBEl = document.querySelector('#choiceB');
+var choiceCEl = document.querySelector('#choiceC');
+var choiceDEl = document.querySelector('#choiceD');
 
-function countdown() {
+
+
+function startTimer () {
     var timeInterval = setInterval(function () {
         timeLeft--;
-        timer.textContent = timeLeft
+    timerEl.textContent = timeLeft;
 
-        if (timeLeft === 0) {
-            clearInterval(timeInterval);
-        }
-
-    }, 1000);
+    if (timeLeft === 0) {
+        clearInterval(timeInterval);
+    }
+    },1000)
 }
 
-countdown();
+startButtonEl.addEventListener("click", function () { 
+    // timeLeft--;
+    console.log("start quiz button clicked")
+    startTimer();
+});

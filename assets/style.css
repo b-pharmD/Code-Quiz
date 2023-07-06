@@ -6,3 +6,14 @@
     text-align: right;
 }
 
+.quizQuestion{
+    display: none;
+}
+
+#quizEnd{
+    display: none;
+}
+
+#scores{
+    display: none;
+}
